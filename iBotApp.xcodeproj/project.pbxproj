@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* iBotAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* iBotAppAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* iBotAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* iBotAppViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* iBotAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* iBotAppViewController.m */; };
+		74017BDF14115AF80096945E /* libRscMgrUniv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74017BD914115AF80096945E /* libRscMgrUniv.a */; };
+		74017BE014115AF90096945E /* RobotModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74017BDE14115AF80096945E /* RobotModel.m */; };
+		74017BF614115B520096945E /* SimpleUDPSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 74017BF314115B520096945E /* SimpleUDPSocket.m */; };
+		74017BF714115B520096945E /* CustomSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 74017BF514115B520096945E /* CustomSlider.m */; };
+		74017BFB14115BC00096945E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74017BFA14115BC00096945E /* AVFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		74017BFD14115BC00096945E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74017BFC14115BC00096945E /* CFNetwork.framework */; };
+		74017BFF14115BC00096945E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74017BFE14115BC00096945E /* CoreMedia.framework */; };
+		74017C0114115BC00096945E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74017C0014115BC00096945E /* CoreMotion.framework */; };
+		74017C0314115BC00096945E /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74017C0214115BC00096945E /* CoreVideo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		74017C0514115BC00096945E /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74017C0414115BC00096945E /* ExternalAccessory.framework */; };
+		74017C0714115BC00096945E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74017C0614115BC00096945E /* OpenGLES.framework */; };
+		74017C0914115BC00096945E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74017C0814115BC00096945E /* QuartzCore.framework */; };
+		74017C6014115BE20096945E /* noise.png in Resources */ = {isa = PBXBuildFile; fileRef = 74017C5C14115BE20096945E /* noise.png */; };
+		74017C6114115BE20096945E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 74017C5D14115BE20096945E /* Icon.png */; };
+		74017C6214115BE20096945E /* GreenLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 74017C5E14115BE20096945E /* GreenLight.png */; };
+		74017C6314115BE20096945E /* RedLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 74017C5F14115BE20096945E /* RedLight.png */; };
+		74017C6B14115BE70096945E /* All Your Base.wav in Resources */ = {isa = PBXBuildFile; fileRef = 74017C6514115BE70096945E /* All Your Base.wav */; };
+		74017C6C14115BE70096945E /* sad trombone.wav in Resources */ = {isa = PBXBuildFile; fileRef = 74017C6614115BE70096945E /* sad trombone.wav */; };
+		74017C6D14115BE70096945E /* Clown Horn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 74017C6714115BE70096945E /* Clown Horn.wav */; };
+		74017C6E14115BE70096945E /* Bark.wav in Resources */ = {isa = PBXBuildFile; fileRef = 74017C6814115BE70096945E /* Bark.wav */; };
+		74017C6F14115BE70096945E /* Cat Hiss.wav in Resources */ = {isa = PBXBuildFile; fileRef = 74017C6914115BE70096945E /* Cat Hiss.wav */; };
+		74017C7014115BE70096945E /* Horse Buck.wav in Resources */ = {isa = PBXBuildFile; fileRef = 74017C6A14115BE70096945E /* Horse Buck.wav */; };
+		74017C7C14115C1A0096945E /* LLOrientationVector.m in Sources */ = {isa = PBXBuildFile; fileRef = 74017C7314115C1A0096945E /* LLOrientationVector.m */; };
+		74017C7D14115C1A0096945E /* LLOrientationDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 74017C7514115C1A0096945E /* LLOrientationDetector.m */; };
+		74017C7E14115C1A0096945E /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 74017C7714115C1A0096945E /* ImageUtils.m */; };
+		74017C7F14115C1A0096945E /* CameraCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 74017C7914115C1A0096945E /* CameraCapturer.m */; };
+		74017C8014115C1A0096945E /* SampleBufferHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 74017C7B14115C1A0096945E /* SampleBufferHolder.m */; };
+		74017C8414115C300096945E /* RemoteBotController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74017C8214115C300096945E /* RemoteBotController.m */; };
+		74017C8514115C300096945E /* RemoteBotController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74017C8314115C300096945E /* RemoteBotController.xib */; };
+		74017C9B141164B90096945E /* BotBrainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74017C99141164B90096945E /* BotBrainController.m */; };
+		74017C9C141164B90096945E /* BotBrainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74017C9A141164B90096945E /* BotBrainController.xib */; };
+		74017CAC14116AAC0096945E /* RemoteRobotModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74017CAB14116AAC0096945E /* RemoteRobotModel.m */; };
+		749B04A71419837700DACD01 /* AACAudioTranscoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 749B04A61419837700DACD01 /* AACAudioTranscoder.m */; };
+		749BFF581416A40900DACD01 /* RobotObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 749BFF571416A40900DACD01 /* RobotObject.m */; };
+		74A4AE0F1419C2910064946E /* AutonomyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A4AE0D1419C2910064946E /* AutonomyViewController.m */; };
+		74A4AE101419C2910064946E /* AutonomyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74A4AE0E1419C2910064946E /* AutonomyViewController.xib */; };
+		74FC23921411D1CE00BD3384 /* RobotAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FC23911411D1CE00BD3384 /* RobotAction.m */; };
+		74FC24621411D59B00BD3384 /* VideoBroadcaster.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FC24611411D59B00BD3384 /* VideoBroadcaster.m */; };
+		74FC25701416542C00BD3384 /* pkmFFT.mm in Sources */ = {isa = PBXBuildFile; fileRef = 74FC25661416542C00BD3384 /* pkmFFT.mm */; };
+		74FC25711416542C00BD3384 /* AudioOutputUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 74FC25691416542C00BD3384 /* AudioOutputUnit.mm */; };
+		74FC25731416542C00BD3384 /* AudioOscillator.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FC256E1416542C00BD3384 /* AudioOscillator.m */; };
+		74FC25771416558F00BD3384 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FC25761416558F00BD3384 /* Accelerate.framework */; };
+		74FC25791416558F00BD3384 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FC25781416558F00BD3384 /* AudioToolbox.framework */; };
+		74FC257B1416558F00BD3384 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FC257A1416558F00BD3384 /* CoreAudio.framework */; };
+		74FC2585141655AF00BD3384 /* WalkieTalkie.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FC2584141655AF00BD3384 /* WalkieTalkie.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* iBotAppAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBotAppAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* iBotAppAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBotAppAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* iBotApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBotApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* iBotAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iBotAppViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* iBotAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBotAppViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* iBotAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBotAppViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* iBotApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBotApp_Prefix.pch; sourceTree = "<group>"; };
+		74017BD914115AF80096945E /* libRscMgrUniv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libRscMgrUniv.a; sourceTree = "<group>"; };
+		74017BDA14115AF80096945E /* redparkSerial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = redparkSerial.h; sourceTree = "<group>"; };
+		74017BDB14115AF80096945E /* RscMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RscMgr.h; sourceTree = "<group>"; };
+		74017BDC14115AF80096945E /* RobotConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotConstants.h; sourceTree = "<group>"; };
+		74017BDD14115AF80096945E /* RobotModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotModel.h; sourceTree = "<group>"; };
+		74017BDE14115AF80096945E /* RobotModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RobotModel.m; sourceTree = "<group>"; };
+		74017BF114115B520096945E /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		74017BF214115B520096945E /* SimpleUDPSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleUDPSocket.h; path = ../SimpleUDPSocket.h; sourceTree = "<group>"; };
+		74017BF314115B520096945E /* SimpleUDPSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleUDPSocket.m; path = ../SimpleUDPSocket.m; sourceTree = "<group>"; };
+		74017BF414115B520096945E /* CustomSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSlider.h; sourceTree = "<group>"; };
+		74017BF514115B520096945E /* CustomSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSlider.m; sourceTree = "<group>"; };
+		74017BFA14115BC00096945E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		74017BFC14115BC00096945E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		74017BFE14115BC00096945E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		74017C0014115BC00096945E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		74017C0214115BC00096945E /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		74017C0414115BC00096945E /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		74017C0614115BC00096945E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		74017C0814115BC00096945E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		74017C5C14115BE20096945E /* noise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noise.png; sourceTree = "<group>"; };
+		74017C5D14115BE20096945E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		74017C5E14115BE20096945E /* GreenLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenLight.png; sourceTree = "<group>"; };
+		74017C5F14115BE20096945E /* RedLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedLight.png; sourceTree = "<group>"; };
+		74017C6514115BE70096945E /* All Your Base.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "All Your Base.wav"; sourceTree = "<group>"; };
+		74017C6614115BE70096945E /* sad trombone.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sad trombone.wav"; sourceTree = "<group>"; };
+		74017C6714115BE70096945E /* Clown Horn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Clown Horn.wav"; sourceTree = "<group>"; };
+		74017C6814115BE70096945E /* Bark.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bark.wav; sourceTree = "<group>"; };
+		74017C6914115BE70096945E /* Cat Hiss.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Cat Hiss.wav"; sourceTree = "<group>"; };
+		74017C6A14115BE70096945E /* Horse Buck.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Horse Buck.wav"; sourceTree = "<group>"; };
+		74017C7214115C1A0096945E /* LLOrientationVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLOrientationVector.h; sourceTree = "<group>"; };
+		74017C7314115C1A0096945E /* LLOrientationVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLOrientationVector.m; sourceTree = "<group>"; };
+		74017C7414115C1A0096945E /* LLOrientationDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLOrientationDetector.h; sourceTree = "<group>"; };
+		74017C7514115C1A0096945E /* LLOrientationDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLOrientationDetector.m; sourceTree = "<group>"; };
+		74017C7614115C1A0096945E /* ImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtils.h; sourceTree = "<group>"; };
+		74017C7714115C1A0096945E /* ImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtils.m; sourceTree = "<group>"; };
+		74017C7814115C1A0096945E /* CameraCapturer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraCapturer.h; sourceTree = "<group>"; };
+		74017C7914115C1A0096945E /* CameraCapturer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraCapturer.m; sourceTree = "<group>"; };
+		74017C7A14115C1A0096945E /* SampleBufferHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleBufferHolder.h; sourceTree = "<group>"; };
+		74017C7B14115C1A0096945E /* SampleBufferHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleBufferHolder.m; sourceTree = "<group>"; };
+		74017C8114115C300096945E /* RemoteBotController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteBotController.h; sourceTree = "<group>"; };
+		74017C8214115C300096945E /* RemoteBotController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteBotController.m; sourceTree = "<group>"; };
+		74017C8314115C300096945E /* RemoteBotController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RemoteBotController.xib; sourceTree = "<group>"; };
+		74017C98141164B90096945E /* BotBrainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BotBrainController.h; sourceTree = "<group>"; };
+		74017C99141164B90096945E /* BotBrainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BotBrainController.m; sourceTree = "<group>"; };
+		74017C9A141164B90096945E /* BotBrainController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BotBrainController.xib; sourceTree = "<group>"; };
+		74017CAA14116AAC0096945E /* RemoteRobotModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteRobotModel.h; sourceTree = "<group>"; };
+		74017CAB14116AAC0096945E /* RemoteRobotModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteRobotModel.m; sourceTree = "<group>"; };
+		749B04A51419837700DACD01 /* AACAudioTranscoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AACAudioTranscoder.h; sourceTree = "<group>"; };
+		749B04A61419837700DACD01 /* AACAudioTranscoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AACAudioTranscoder.m; sourceTree = "<group>"; };
+		749BFF561416A40900DACD01 /* RobotObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotObject.h; sourceTree = "<group>"; };
+		749BFF571416A40900DACD01 /* RobotObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RobotObject.m; sourceTree = "<group>"; };
+		74A4AE0C1419C2910064946E /* AutonomyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutonomyViewController.h; sourceTree = "<group>"; };
+		74A4AE0D1419C2910064946E /* AutonomyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutonomyViewController.m; sourceTree = "<group>"; };
+		74A4AE0E1419C2910064946E /* AutonomyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutonomyViewController.xib; sourceTree = "<group>"; };
+		74FC23901411D1CE00BD3384 /* RobotAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotAction.h; sourceTree = "<group>"; };
+		74FC23911411D1CE00BD3384 /* RobotAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RobotAction.m; sourceTree = "<group>"; };
+		74FC24601411D59B00BD3384 /* VideoBroadcaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoBroadcaster.h; sourceTree = "<group>"; };
+		74FC24611411D59B00BD3384 /* VideoBroadcaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoBroadcaster.m; sourceTree = "<group>"; };
+		74FC25651416542C00BD3384 /* pkmFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkmFFT.h; sourceTree = "<group>"; };
+		74FC25661416542C00BD3384 /* pkmFFT.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = pkmFFT.mm; sourceTree = "<group>"; };
+		74FC25671416542C00BD3384 /* AudioEngineHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioEngineHelpers.h; sourceTree = "<group>"; };
+		74FC25681416542C00BD3384 /* DebuggingMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebuggingMacros.h; sourceTree = "<group>"; };
+		74FC25691416542C00BD3384 /* AudioOutputUnit.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioOutputUnit.mm; sourceTree = "<group>"; };
+		74FC256A1416542C00BD3384 /* AudioOutputUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioOutputUnit.h; sourceTree = "<group>"; };
+		74FC256D1416542C00BD3384 /* AudioOscillator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioOscillator.h; sourceTree = "<group>"; };
+		74FC256E1416542C00BD3384 /* AudioOscillator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioOscillator.m; sourceTree = "<group>"; };
+		74FC25761416558F00BD3384 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		74FC25781416558F00BD3384 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		74FC257A1416558F00BD3384 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		74FC2583141655AF00BD3384 /* WalkieTalkie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkieTalkie.h; sourceTree = "<group>"; };
+		74FC2584141655AF00BD3384 /* WalkieTalkie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalkieTalkie.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* iBotApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iBotApp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				74017BDF14115AF80096945E /* libRscMgrUniv.a in Frameworks */,
+				74017BFB14115BC00096945E /* AVFoundation.framework in Frameworks */,
+				74017BFD14115BC00096945E /* CFNetwork.framework in Frameworks */,
+				74017BFF14115BC00096945E /* CoreMedia.framework in Frameworks */,
+				74017C0114115BC00096945E /* CoreMotion.framework in Frameworks */,
+				74017C0314115BC00096945E /* CoreVideo.framework in Frameworks */,
+				74017C0514115BC00096945E /* ExternalAccessory.framework in Frameworks */,
+				74017C0714115BC00096945E /* OpenGLES.framework in Frameworks */,
+				74017C0914115BC00096945E /* QuartzCore.framework in Frameworks */,
+				74FC25771416558F00BD3384 /* Accelerate.framework in Frameworks */,
+				74FC25791416558F00BD3384 /* AudioToolbox.framework in Frameworks */,
+				74FC257B1416558F00BD3384 /* CoreAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				74017C7114115C110096945E /* Camera */,
+				74017BD814115AF80096945E /* Redpark SDK */,
+				74017BDC14115AF80096945E /* RobotConstants.h */,
+				749BFF561416A40900DACD01 /* RobotObject.h */,
+				749BFF571416A40900DACD01 /* RobotObject.m */,
+				74017CAA14116AAC0096945E /* RemoteRobotModel.h */,
+				74017CAB14116AAC0096945E /* RemoteRobotModel.m */,
+				74017BDD14115AF80096945E /* RobotModel.h */,
+				74017BDE14115AF80096945E /* RobotModel.m */,
+				74A4AE031419C2160064946E /* AutonomyController */,
+				74017C8714115C460096945E /* Local Bot Control */,
+				74017C8614115C340096945E /* Remote Bot Control */,
+				1D3623240D0F684500981E51 /* iBotAppAppDelegate.h */,
+				1D3623250D0F684500981E51 /* iBotAppAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* iBotAppViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* iBotAppViewController.m */,
+				74017BF914115B550096945E /* Network */,
+				74FC23901411D1CE00BD3384 /* RobotAction.h */,
+				74FC23911411D1CE00BD3384 /* RobotAction.m */,
+				74FC25631416542C00BD3384 /* Audio Stuff */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* iBotApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				74017BF114115B520096945E /* SynthesizeSingleton.h */,
+				74017BF414115B520096945E /* CustomSlider.h */,
+				74017BF514115B520096945E /* CustomSlider.m */,
+				32CA4F630368D1EE00C91783 /* iBotApp_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				74017C6414115BE70096945E /* Sounds */,
+				74017C5B14115BDD0096945E /* Images */,
+				2899E5210DE3E06400AC0155 /* iBotAppViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* iBotApp-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74017BFA14115BC00096945E /* AVFoundation.framework */,
+				74017BFC14115BC00096945E /* CFNetwork.framework */,
+				74017BFE14115BC00096945E /* CoreMedia.framework */,
+				74017C0014115BC00096945E /* CoreMotion.framework */,
+				74017C0214115BC00096945E /* CoreVideo.framework */,
+				74017C0414115BC00096945E /* ExternalAccessory.framework */,
+				74017C0614115BC00096945E /* OpenGLES.framework */,
+				74017C0814115BC00096945E /* QuartzCore.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				74FC25761416558F00BD3384 /* Accelerate.framework */,
+				74FC25781416558F00BD3384 /* AudioToolbox.framework */,
+				74FC257A1416558F00BD3384 /* CoreAudio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74017BD814115AF80096945E /* Redpark SDK */ = {
+			isa = PBXGroup;
+			children = (
+				74017BD914115AF80096945E /* libRscMgrUniv.a */,
+				74017BDA14115AF80096945E /* redparkSerial.h */,
+				74017BDB14115AF80096945E /* RscMgr.h */,
+			);
+			path = "Redpark SDK";
+			sourceTree = "<group>";
+		};
+		74017BF914115B550096945E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				74017BF214115B520096945E /* SimpleUDPSocket.h */,
+				74017BF314115B520096945E /* SimpleUDPSocket.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		74017C5B14115BDD0096945E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				74017C5C14115BE20096945E /* noise.png */,
+				74017C5D14115BE20096945E /* Icon.png */,
+				74017C5E14115BE20096945E /* GreenLight.png */,
+				74017C5F14115BE20096945E /* RedLight.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		74017C6414115BE70096945E /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				74017C6514115BE70096945E /* All Your Base.wav */,
+				74017C6614115BE70096945E /* sad trombone.wav */,
+				74017C6714115BE70096945E /* Clown Horn.wav */,
+				74017C6814115BE70096945E /* Bark.wav */,
+				74017C6914115BE70096945E /* Cat Hiss.wav */,
+				74017C6A14115BE70096945E /* Horse Buck.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		74017C7114115C110096945E /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				74017C7214115C1A0096945E /* LLOrientationVector.h */,
+				74017C7314115C1A0096945E /* LLOrientationVector.m */,
+				74017C7414115C1A0096945E /* LLOrientationDetector.h */,
+				74017C7514115C1A0096945E /* LLOrientationDetector.m */,
+				74017C7614115C1A0096945E /* ImageUtils.h */,
+				74017C7714115C1A0096945E /* ImageUtils.m */,
+				74017C7814115C1A0096945E /* CameraCapturer.h */,
+				74017C7914115C1A0096945E /* CameraCapturer.m */,
+				74017C7A14115C1A0096945E /* SampleBufferHolder.h */,
+				74017C7B14115C1A0096945E /* SampleBufferHolder.m */,
+				74FC24601411D59B00BD3384 /* VideoBroadcaster.h */,
+				74FC24611411D59B00BD3384 /* VideoBroadcaster.m */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		74017C8614115C340096945E /* Remote Bot Control */ = {
+			isa = PBXGroup;
+			children = (
+				74017C8114115C300096945E /* RemoteBotController.h */,
+				74017C8214115C300096945E /* RemoteBotController.m */,
+				74017C8314115C300096945E /* RemoteBotController.xib */,
+			);
+			name = "Remote Bot Control";
+			sourceTree = "<group>";
+		};
+		74017C8714115C460096945E /* Local Bot Control */ = {
+			isa = PBXGroup;
+			children = (
+				74017C98141164B90096945E /* BotBrainController.h */,
+				74017C99141164B90096945E /* BotBrainController.m */,
+				74017C9A141164B90096945E /* BotBrainController.xib */,
+			);
+			name = "Local Bot Control";
+			sourceTree = "<group>";
+		};
+		74A4AE031419C2160064946E /* AutonomyController */ = {
+			isa = PBXGroup;
+			children = (
+				74A4AE0C1419C2910064946E /* AutonomyViewController.h */,
+				74A4AE0D1419C2910064946E /* AutonomyViewController.m */,
+				74A4AE0E1419C2910064946E /* AutonomyViewController.xib */,
+			);
+			name = AutonomyController;
+			sourceTree = "<group>";
+		};
+		74FC25631416542C00BD3384 /* Audio Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				74FC2583141655AF00BD3384 /* WalkieTalkie.h */,
+				74FC2584141655AF00BD3384 /* WalkieTalkie.m */,
+				74FC25671416542C00BD3384 /* AudioEngineHelpers.h */,
+				74FC25681416542C00BD3384 /* DebuggingMacros.h */,
+				74FC25691416542C00BD3384 /* AudioOutputUnit.mm */,
+				74FC256A1416542C00BD3384 /* AudioOutputUnit.h */,
+				74FC256D1416542C00BD3384 /* AudioOscillator.h */,
+				74FC256E1416542C00BD3384 /* AudioOscillator.m */,
+				749B04A51419837700DACD01 /* AACAudioTranscoder.h */,
+				749B04A61419837700DACD01 /* AACAudioTranscoder.m */,
+				74FC25641416542C00BD3384 /* FFT */,
+			);
+			name = "Audio Stuff";
+			sourceTree = "<group>";
+		};
+		74FC25641416542C00BD3384 /* FFT */ = {
+			isa = PBXGroup;
+			children = (
+				74FC25651416542C00BD3384 /* pkmFFT.h */,
+				74FC25661416542C00BD3384 /* pkmFFT.mm */,
+			);
+			name = FFT;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* iBotApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iBotApp" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iBotApp;
+			productName = iBotApp;
+			productReference = 1D6058910D05DD3D006BFB54 /* iBotApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iBotApp" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* iBotApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* iBotAppViewController.xib in Resources */,
+				74017C6014115BE20096945E /* noise.png in Resources */,
+				74017C6114115BE20096945E /* Icon.png in Resources */,
+				74017C6214115BE20096945E /* GreenLight.png in Resources */,
+				74017C6314115BE20096945E /* RedLight.png in Resources */,
+				74017C6B14115BE70096945E /* All Your Base.wav in Resources */,
+				74017C6C14115BE70096945E /* sad trombone.wav in Resources */,
+				74017C6D14115BE70096945E /* Clown Horn.wav in Resources */,
+				74017C6E14115BE70096945E /* Bark.wav in Resources */,
+				74017C6F14115BE70096945E /* Cat Hiss.wav in Resources */,
+				74017C7014115BE70096945E /* Horse Buck.wav in Resources */,
+				74017C8514115C300096945E /* RemoteBotController.xib in Resources */,
+				74017C9C141164B90096945E /* BotBrainController.xib in Resources */,
+				74A4AE101419C2910064946E /* AutonomyViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* iBotAppAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* iBotAppViewController.m in Sources */,
+				74017BE014115AF90096945E /* RobotModel.m in Sources */,
+				74017BF614115B520096945E /* SimpleUDPSocket.m in Sources */,
+				74017BF714115B520096945E /* CustomSlider.m in Sources */,
+				74017C7C14115C1A0096945E /* LLOrientationVector.m in Sources */,
+				74017C7D14115C1A0096945E /* LLOrientationDetector.m in Sources */,
+				74017C7E14115C1A0096945E /* ImageUtils.m in Sources */,
+				74017C7F14115C1A0096945E /* CameraCapturer.m in Sources */,
+				74017C8014115C1A0096945E /* SampleBufferHolder.m in Sources */,
+				74017C8414115C300096945E /* RemoteBotController.m in Sources */,
+				74017C9B141164B90096945E /* BotBrainController.m in Sources */,
+				74017CAC14116AAC0096945E /* RemoteRobotModel.m in Sources */,
+				74FC23921411D1CE00BD3384 /* RobotAction.m in Sources */,
+				74FC24621411D59B00BD3384 /* VideoBroadcaster.m in Sources */,
+				74FC25701416542C00BD3384 /* pkmFFT.mm in Sources */,
+				74FC25711416542C00BD3384 /* AudioOutputUnit.mm in Sources */,
+				74FC25731416542C00BD3384 /* AudioOscillator.m in Sources */,
+				74FC2585141655AF00BD3384 /* WalkieTalkie.m in Sources */,
+				749BFF581416A40900DACD01 /* RobotObject.m in Sources */,
+				749B04A71419837700DACD01 /* AACAudioTranscoder.m in Sources */,
+				74A4AE0F1419C2910064946E /* AutonomyViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iBotApp_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "iBotApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes/Redpark SDK\"",
+				);
+				PRODUCT_NAME = iBotApp;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iBotApp_Prefix.pch;
+				INFOPLIST_FILE = "iBotApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes/Redpark SDK\"",
+				);
+				PRODUCT_NAME = iBotApp;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Redpark SDK\"",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iBotApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iBotApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
